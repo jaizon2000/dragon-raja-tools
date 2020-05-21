@@ -6,16 +6,18 @@
     <title>AFK Cook Calculator</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Step 1 -->
     <div id='content'>
         <h1>AFK Cooking Calculator</h1>
-            <h2>1. Choose what to make</h2>
-            <div id="recipe-grid">
-                <!-- Make grid in JS -->
-            </div>
+        <h2>1. Choose what to make</h2>
+        <div id="recipe-grid">
+            <!-- Make grid in JS -->
+        </div>
 
         <!-- Step 2 -->
         <div>
@@ -28,9 +30,20 @@
 
             <!-- Option 2 -->
             <h3>How many can I make with...</h3>
-            <input type="number" id='ing-num'>
-            <h3 id='ing-name'>Tomatoes</h3>
-            <img id='test' src="./imgs/meat/duck.png">
+
+
+            <div id="op-2-box">
+                <div>
+                    <input type="number" id='ing-num'>
+                </div>
+                <div>
+                    <h3 id="ing-name">Tomatoes</h3>
+                </div>
+                <div>
+                    <img id='img-src' src="./imgs/meat/duck.png">
+                </div>
+            </div>
+
 
             <!-- Option 3 -->
             <h3>I want to make this much money...</h3>

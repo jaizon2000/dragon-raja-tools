@@ -1,12 +1,49 @@
 html {
+    font-family: 'Asap', sans-serif;
+    font-size: larger;
     background-color: #3B3B3B;
 }
+
 #content {
     background-color: white;
     padding: 6px 30px;
     margin: 55px 140px;
     border-radius: 5px;
 }
-h2, h1 {
+
+h2,
+h1 {
     color: #707070;
+}
+
+input[type=number] {
+    width: 50px;
+    height: 50px;
+    font-size: x-large;
+    font-family: 'Asap', sans-serif;
+}
+
+button {
+    font-family: 'Asap', sans-serif;
+}
+
+#ing-name {
+    padding: 0 40px 0 10px;
+}
+
+#img-src {
+    width: 60px;
+}
+
+#op-2-box {
+    display: flex;
+    align-items: center;
+
+    /* Display: flex for it to work */
+
+    /* Horizontal Centre */
+    /* justify-content: center; */
+
+    /* Vertical Centre */
+    /* align-items: center; */
 }

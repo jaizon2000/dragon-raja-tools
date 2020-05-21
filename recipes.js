@@ -48,7 +48,7 @@ const tomato_soup = new Recipe(
 const french_burger = new Recipe(
     recipe_names[id++], {
         1: ['egg', 'vegetable'],
-        2: ['beef', ]
+        2: ['beef', 'flour', 'tomato-sauce']
     },
     0,
     0,
