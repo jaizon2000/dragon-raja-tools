@@ -25,6 +25,16 @@ input[type=number] {
 
 button {
     font-family: 'Asap', sans-serif;
+    font-size: larger;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+.active-btn {
+    background-color: #3B3B3B;
+    color: white;
 }
 
 #ing-name {

@@ -30,7 +30,7 @@ const chawanmushi = new Recipe(
     recipe_names[id++], {
         1: ['egg', 'mushroom', 'seaweed', 'wildfish', 'salt', 'seasoning']
     },
-    tomin(30),
+    30,
     0,
     ["Max HP +69600", "(2 hrs)"]);
 
