@@ -1,0 +1,12 @@
+html {
+    background-color: #3B3B3B;
+}
+#content {
+    background-color: white;
+    padding: 6px 30px;
+    margin: 55px 140px;
+    border-radius: 5px;
+}
+h2, h1 {
+    color: #707070;
+}
