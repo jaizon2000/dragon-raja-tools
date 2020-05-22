@@ -2,20 +2,23 @@ class Ingredient {
     constructor(img_name, category, price) {
         this.name = img_name;
         this.category = category;
-        this.price = price;
+        this.price_of_one = price;
         this.src = "./imgs/" + this.category + "/" + this.name + ".png";
+    }
+    price(num=1) {
+        return this.price_of_one * num;
     }
 }
 
 
 // MEAT
 const egg = new Ingredient("egg", "meat", 75);
-const beef = new Ingredient("beef", "meat", price);
-const chicken = new Ingredient("chicken", "meat", price);
-const duck = new Ingredient("duck", "meat", price);
-const foiegias = new Ingredient("foie-gias", "meat", price);
-const mutton = new Ingredient("mutton", "meat", price);
-const pork = new Ingredient("pork", "meat", price);
+const beef = new Ingredient("beef", "meat", 250);
+const chicken = new Ingredient("chicken", "meat", 250);
+const duck = new Ingredient("duck", "meat", 250);
+const foiegias = new Ingredient("foie-gias", "meat", 400);
+const mutton = new Ingredient("mutton", "meat", 250);
+const pork = new Ingredient("pork", "meat", 250);
 
 
 // VEGETABLE
