@@ -23,7 +23,7 @@ input[type=number] {
 
     font-size: x-large;
     font-family: 'Asap', sans-serif;
-    
+
 }
 
 button {
@@ -37,10 +37,12 @@ button {
 button:hover {
     cursor: pointer;
 }
+
 .active-btn {
     background-color: #3B3B3B;
-    color: white; 
+    color: white;
 }
+
 #img-src {
     width: 60px;
 }
@@ -57,13 +59,18 @@ button:hover {
 }
 
 .box {
-    width: 50px;
-    height: 50px;
-    border: 3px solid black;
+    width: 125px;
+    /* height: 500px; */
+    /* border: 3px solid black; */
+
+    outline: 2px solid red;
+    
     background-color: lightskyblue;
 }
+
 #recipe-grid {
     display: grid;
+    text-align: center;
     /* grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr); */
 }
