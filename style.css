@@ -19,8 +19,11 @@ h1 {
 input[type=number] {
     width: 50px;
     height: 50px;
+    margin-right: 10px;
+
     font-size: x-large;
     font-family: 'Asap', sans-serif;
+    
 }
 
 button {
@@ -28,32 +31,27 @@ button {
     font-size: larger;
     padding: 10px 15px;
     border-radius: 5px;
+    background-color: rgb(233, 233, 233);
 }
+
 button:hover {
     cursor: pointer;
 }
 .active-btn {
     background-color: #3B3B3B;
-    color: white;
+    color: white; 
 }
-
-#ing-name {
-    padding: 0 40px 0 10px;
-}
-
 #img-src {
     width: 60px;
 }
 
 #op-2-box {
-    display: flex;
+    width: 350px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    /* Vertical Centre */
     align-items: center;
-
-    /* Display: flex for it to work */
 
     /* Horizontal Centre */
     /* justify-content: center; */
-
-    /* Vertical Centre */
-    /* align-items: center; */
 }
