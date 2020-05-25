@@ -30,7 +30,7 @@ class Grid {
                 console.log(id);
 
                 html += "<div id='" + id + "' class='box'>" +
-                    "<img src='./imgs/meat/egg.png'>" +
+                    "<img src='../imgs/meat/egg.png'>" +
                     "<br>Dish Name<p></p>"+
                     "</div>";
             }

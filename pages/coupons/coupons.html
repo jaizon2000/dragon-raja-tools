@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Coupons</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Asap:wght@4;5;6;7&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div id="content">
+
+        <div id="user-input">
+
+            <h2>How many coupons do you have now?</h2>
+            <input id="initial-amnt" type="number" value="0" onfocus="this.value=''">
+            <h2>Rebate Rank Goal</h2>
+
+            <div id="choose-rank">
+                <input list="titles" name="title" id="title" data-value="1: Agent" value="4"onfocus="this.value=''">
+                <datalist id="titles">
+                    <option data-value="0" value="0: Newbie">
+                    <option data-value="1" value="1: Agent">
+                    <option data-value="2" value="2: Minister">
+                    <option data-value="3" value="3: Master">
+                    <option data-value="4" value="4: Upstart">
+                    <option data-value="5" value="5: Genius">
+                    <option data-value="6" value="6: Master-II">
+                    <option data-value="7" value="7: Billionaire">
+                    <option data-value="8" value="8: Hotshot">
+                    <option data-value="9" value="9: President">
+                    <option data-value="10" value="10: Director">
+                    <option data-value="11" value="11: The Richest">
+                    <option data-value="12" value="12: Shareholder">
+                    <option data-value="13" value="13: School Board">
+                    <option data-value="14" value="14: Chairman">
+                    <option data-value="15" value="15: Tycoon">
+                    <option data-value="16" value="16: Wall Street">
+                    <option data-value="17" value="17: Gattuso Elder">
+                </datalist>
+            </div>
+            <p><button id="calculate-btn" onmousedown="start()">Calculate</button></p>
+        </div>
+
+        <div>
+            <div id="result">
+                <p><b>Cheapest Deal</b></p>
+                <p><b>Best Deal</b></p>
+            </div>
+
+
+            <table>
+                <tr>
+                    <th>Rebate Rank</th>
+                    <th>60c for $1.39</th>
+                    <th>300c for $6.49</th>
+                    <th>980c for $19.99</th>
+                    <th>1980c for $39.99 (Recommended)</th>
+                    <th>3280c for $66.99</th>
+                    <th>6480c for $134.99</th>
+                </tr>
+                <tr>
+                    <th id="level"></th>
+                    <th id="price-0"></th>
+                    <th id="price-1"></th>
+                    <th id="price-2"></th>
+                    <th id="price-3"></th>
+                    <th id="price-4"></th>
+                    <th id="price-5"></th>
+                </tr>
+            </table>
+
+
+            <div>
+                <!--Currency Converter widget by FreeCurrencyRates.com -->
+
+                <div id='gcw_mainFPgMbBFCc' class='gcw_mainFPgMbBFCc'></div>
+                <a id='gcw_siteFPgMbBFCc' href='https://freecurrencyrates.com/en/'>FreeCurrencyRates.com</a>
+                <script>
+                    function reloadFPgMbBFCc() {
+                        var sc = document.getElementById('scFPgMbBFCc');
+                        if (sc) sc.parentNode.removeChild(sc);
+                        sc = document.createElement('script');
+                        sc.type = 'text/javascript';
+                        sc.charset = 'UTF-8';
+                        sc.async = true;
+                        sc.id = 'scFPgMbBFCc';
+                        sc.src =
+                            'https://freecurrencyrates.com/en/widget-vertical-editable?iso=XUL-USD-EUR-GBP-JPY-CNY&df=1&p=FPgMbBFCc&v=fits&source=fcr&width=245&width_title=0&firstrowvalue=12&thm=A6C9E2,FCFDFD,4297D7,5C9CCC,FFFFFF,C5DBEC,FCFDFD,2E6E9E,000000&title=Currency%20Converter&tzo=360';
+                        var div = document.getElementById('gcw_mainFPgMbBFCc');
+                        div.parentNode.insertBefore(sc, div);
+                    }
+                    reloadFPgMbBFCc();
+                </script>
+                <!-- put custom styles here: .gcw_mainFPgMbBFCc{}, .gcw_headerFPgMbBFCc{}, .gcw_ratesFPgMbBFCc{}, .gcw_sourceFPgMbBFCc{} -->
+                <!--End of Currency Converter widget by FreeCurrencyRates.com -->
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
